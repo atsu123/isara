@@ -1,0 +1,1836 @@
+:root {
+  --form: #D84940;
+  --orange: #EBB94D;
+  --twitter: #1D9BF0;
+  --good: #4BA1EC;
+  --bgcolor: #FEF5E0;
+  --blue: #016EA9;
+  --yellow: #F7C23C;
+}
+
+
+html {
+    margin:0;
+    padding:0;
+  }
+
+  body {
+    color: #333333;
+      font-size: 14px;
+      line-height: 1.6;
+      font-family: "�q���M�m�p�S Pro W3", "Hiragino Kaku Gothic Pro", "���C���I", Meiryo, Osaka, "�l�r �o�S�V�b�N", "MS PGothic", sans-serif;
+  }
+
+  /* first settings */
+  .brsp {
+    display: none;
+  }
+  .psp {
+    display: none;
+  }
+
+  /* header section */
+  .header {
+    height: 75px;
+    text-align: right;
+    background-color: #fff;
+    display: block;
+    margin: 0 auto;
+    }
+    .header .inner {
+      position: relative;
+      width: 1170px;
+      margin: 0 auto;
+      padding-top: 20px;
+    }
+    .header-left {
+      position: absolute;
+      left: 15px;
+    }
+    .header-left p {
+      display: inline;
+      position: relative;
+      top: 8px;
+      font-size: 15px;
+    }
+    .header-right {
+      display: inline-block;
+      position: relative;
+      right: 40px;
+      bottom: 10px;
+      background-color: var(--form);
+      border-radius: 40px;
+    }
+    .header-right a {
+      display: block;
+      text-decoration: none;
+      color: #fff;
+      font-size: 15px;
+      padding: 10px 40px 10px 40px;
+      
+    }
+    .header-right02 {
+      display: none;
+    }
+
+
+  /* top section */
+  .top {
+    background-image: url(img/main.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    z-index: 1;
+    }
+    .top .section {
+      text-align: center;
+      padding-top: 100px;
+    }
+    .top .section-top {
+      font-size: 30px;
+    }
+    .top .logo {
+      margin-top: 40px;
+    }
+    .top .section-bottom {
+      margin-top: 55px;
+      font-size: 20px;
+    }
+
+
+  /* info section */
+  .info {
+    background-color: var(--orange);
+    padding-top: 35px;
+    padding-bottom: 25px;
+    } 
+    .info .section {
+      text-align: center;
+      font-size: 20px;
+      color: #fff;
+    }
+    .info .section-top .strong {
+      display: inline-block;
+      color: red;
+      background-color: #fff;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+    .info .form {
+      margin: 45px auto;
+      display: block;
+      max-width: 1028px;
+      background-color: var(--form);
+      border-radius: 70px;
+    }
+    .info .form a {
+      display: block;
+      text-decoration: none;
+      padding: 30px 120px;
+      font-size: 35px;
+      color: #fff;
+    }
+    .info .section-bottom p {
+      margin-top: 45px;
+    }
+    .info .section-bottom .item01 {
+      margin-top: 0px;
+    }
+    .SNS {
+      margin-top: 25px;
+      text-align: center;
+      color: #fff;
+    }
+    .SNS a {
+      text-decoration: none;
+      color: #fff;
+    }
+    .SNS i {
+      width: 15px;
+      height: 15px;
+      position: relative;
+      top: 2px;
+    }
+    .SNS p {
+      display: inline;
+      font-size: 10px;
+    }
+    .twitter {
+      display: inline-block;
+      background-color: var(--twitter);
+      border-radius: 15px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .good {
+      display: inline-block;
+      background-color: var(--good);
+      border-radius: 15px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .share {
+      display: inline-block;
+      background-color: var(--good);
+      border-radius: 15px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+  /* introduction section */
+  .introduction {
+    text-align: center;
+    padding: 40px 0;
+    background-image: url(img/introbottom.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 587px;
+    }
+    .introduction .title {
+      width: 860px;
+      max-width: calc(100% - 40px);
+      margin: 0 auto;
+    }   
+    .introduction .title h2 {
+      position: relative;
+      padding: 40px 30px;
+      font-size: 30px; 
+      font-weight: 600;
+    }
+    .introduction .title h2::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50px;
+      height: 50px;
+      border-top: 4px solid var(--orange);
+      border-left: 4px solid var(--orange);
+    }
+    .introduction .title h2::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 50px;
+      height: 50px;
+      border-bottom: 4px solid var(--orange);
+      border-right: 4px solid var(--orange);
+    }
+    .introduction .section {
+      padding: 40px 0;
+    }
+    .introduction .section p {
+      font-size: 20px;
+    }
+    .introduction .underline {
+      background:linear-gradient(transparent 70%, var(--orange) 0%);
+    }
+
+  /* about section */
+  .about {
+    text-align: center;
+    background-color: var(--bgcolor);
+    font-size: 14px;
+    padding: 0 0 40px 0;
+    }
+    .about .mere .circle1 {
+      display: inline-block;
+      line-height: 80px;
+      color: #fff;
+      width: 80px;
+      height: 80px;
+      background-color: var(--orange);
+      border-radius: 50%;
+      position: relative;
+      top: -40px;
+    }
+    .about .title {
+      width: 860px;
+      max-width: calc(100% - 40px);
+      margin: 0 auto;
+    }   
+    .about .title h2 {
+      position: relative;
+      padding: 40px 30px;
+      font-size: 30px; 
+      font-weight: 600;
+    }
+    .about .title h2::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50px;
+      height: 50px;
+      border-top: 4px solid var(--orange);
+      border-left: 4px solid var(--orange);
+    }
+    .about .title h2::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 50px;
+      height: 50px;
+      border-bottom: 4px solid var(--orange);
+      border-right: 4px solid var(--orange);
+    }
+    .about .section {
+      font-size: 20px;
+      padding-top: 45px;
+      padding-bottom: 40px;
+    }
+    .about .contents {
+      display: inline-block;
+      width: 1170px;
+      height: 250px;
+      max-width: calc(100% - 40px);
+      margin: 0 auto;
+      border: 2px solid var(--orange);
+      background-color: #fff;
+      border-radius: 5px;
+    }
+    .about .subtitle h3 {
+      font-size: 20px;
+      padding-top: 35px;
+    }
+    .about .aboutbox {
+      display: flex;
+      padding-top: 30px;
+      padding-bottom: 50px;
+      justify-content: center;
+      align-items: center;
+    }
+    .about .img {
+      width: auto;
+      height: auto;
+      max-width: 100%;
+      max-height: 100%;
+    }
+    .about .box {
+      display: inline-block;
+      padding: 10px;
+    }
+    .about .texts {
+      margin-top: 10px;
+      font-size: 12px;
+    }
+
+
+  /* aboutsecound section */
+  .aboutsecond {
+    background-image: url(img/aboutsecondbg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 40px 0;
+    text-align: center;
+    }
+    .aboutsecond .text1 {
+      font-size: 28px;
+    }
+    .aboutsecond h2 {
+      color: #fff;
+      margin-bottom: 20px;
+    }
+    .aboutsecond p {
+      color: #fff;
+    }
+    .aboutsecond .txtm {
+      font-size: 20px;
+    }
+    .yellowtxt {
+      color: var(--orange);
+    }
+    .aboutsecond .container {
+      color: #000;
+      margin-top: 30px;
+    }
+    .container {
+      overflow: hidden;
+    }
+    .aboutsecond .row {
+      margin-right: -15px;
+      margin-left: -15px;
+    }
+    .aboutsecond .sidebox {
+      padding: 30px 30px 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      width: 32%;
+    }
+    .sidebox:nth-of-type(2) {
+      margin: 0 1.5%;
+    }
+    .aboutsecond .step {
+      background-color: #ebb94d;
+      color: #fff;
+      font-weight: 600;
+      border-radius: 5px;
+    }
+    .aboutsecond .sidecontents .txtxs {
+      margin: 30px 0 15px;
+      font-size: 14px;
+    } 
+    .aboutsecond .sidecontents p {
+      color: #000000;
+    }
+
+  /* aboutthird section */
+  .aboutthird {
+    background-color: #016EA9;
+    padding: 40px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .aboutthird .section p {
+      color: #fff;
+      font-size: 20px;
+    }
+    
+  /* isaralearning section */
+  .isaralearning {
+    background-color: #fff;
+    padding: 60px 0;
+    text-align: center;
+    }
+    .isaralearning .title h2 {
+      font-size: 25px;
+      font-weight: 600;
+    }
+    .isaralearning .section {
+      padding-top: 50px;
+    }
+    .isaralearning .section p {
+      font-size: 20px;
+    }
+    .isaralearning .container {
+      padding: 0;
+      width: 860px;
+      max-width: calc(100% - 40px);
+      margin: 40px auto;
+    }
+    .isaralearning .learningbox img {
+      width: 180px;
+      height: auto;
+      max-width: 100%;
+      max-height: 100%;
+    }
+    .isaralearning .bottom p {
+      font-size: 20px;
+    }
+
+  /* merit section */
+  .merit {
+    padding: 40px 0;
+    background-color: var(--bgcolor);
+    text-align: center;
+    }
+    .merit .title {
+      margin: 0 auto;
+      width: 860px;
+      max-width: calc(100%-40px);
+    }
+    .merit .title-top {
+      font-size: 20px;
+      font-weight: 600;
+      position: relative;
+      padding-top: 25px;
+    }
+    .merit .title-bottom {
+      font-size: 30px;
+      font-weight: 600;
+      position: relative;
+      padding-bottom: 25px;
+    }
+    .merit .title-top::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50px;
+      height: 50px;
+      border-top: 4px solid var(--orange);
+      border-left: 4px solid var(--orange);
+    }
+    .merit .title-bottom::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 50px;
+      height: 50px;
+      border-bottom: 4px solid var(--orange);
+      border-right: 4px solid var(--orange);
+    }
+    .merit .container {
+      margin: 40px auto;
+      width: 1140px;
+      max-width: calc(100%-40px);
+    }
+    .merit .container img {
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+      max-height: 100%;
+    }
+    .merit .container .learnfromfreelancer {
+      height: 180px;
+      background-image: url(img/learnfromfreelancer.jpg);
+      background-position: center;
+      background-size: cover;
+    }
+    .merit .container .learnfromprojects {
+      height: 180px;
+      background-image: url(img/learnfromprojects.jpg);
+      background-position: center;
+      background-size: cover;
+    }
+    .merit .container .actuallyfree {
+      height: 180px;
+      background-image: url(img/actuallyfree.jpg);
+      background-position: center;
+      background-size: cover;
+    }
+    .merit .container .section {
+      text-align: left;
+    }
+    .merit .container h2 {
+      font-size: 20px;
+      font-weight: 600;
+      padding-top: 10px;
+    }
+    .merit .container p {
+      font-size: 16px;
+    }
+    .merit .contents {
+      width: 1170px;
+      max-width: calc(100% - 40px);
+      background-color: #fff;
+      border: solid;
+      border-color: var(--orange);
+      border-radius: 5px;
+      padding: 40px 20px;
+      margin: 0 auto;
+    }
+    .merit .contents .title h3 {
+      font-size: 25px;
+      font-weight: 600;
+    }
+    .merit .contents .section-top {
+      font-size: 20px;
+    }
+    .merit .contents .section p {
+      font-size: 18px;
+    }
+    .merit .bottom {
+      padding-top: 40px;
+      font-size: 16px;
+    }
+
+  /* teacher section */
+  .teacher {
+    background-image: url(img/teacherbg.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    }
+    .teacher .icon {
+      display: flex;
+      justify-content: center;
+    }
+    .teacher .icon i {
+      float: left;
+      font-size: 45px;
+    }
+    .teacher .icon h3 {
+      position: relative;
+      top: 8px ;
+      font-size: 30px;
+      font-weight: 600;
+    }
+    .teacher .teacher-top {
+      padding: 40px 0;
+    }
+    .teacher .teacher-top p {
+      font-size: 16;
+    }
+    .teacher .container {
+      width: 1170px;
+      max-width: calc(100% - 40px);
+      margin: 0 auto;
+    }
+    .teacher .teacherbox img {
+      border-radius: 50%;
+      position: relative;
+      z-index: 1;
+    }
+    .teacher .sectionbox {
+      font-size: 17px;
+      padding-top: 40px;
+      border: 3px solid #fff ;
+      position: relative;
+      padding: 40px 40px;
+      top: -35px;
+    }
+    .teacher .teacherbox .section {
+      text-align: left;
+    }
+
+  /* why section */
+  .why {
+    background-color: var(--orange);
+    padding: 40px 0;
+    text-align: center;
+    }
+    .why .title {
+      position: relative;
+      border-radius: 50%;
+      top: 5px;
+      display: inline-block;
+      background-color: #fff;
+      width: 80px;
+      height: 80px;
+      line-height: 80px;
+    }
+    .why .title p {
+      font-size: 12px;
+      color: var(--orange);
+    }
+    .why .question {
+      width: 860px;
+      margin: 0 auto;
+      max-width: calc(100% - 40px);
+      position: relative;
+      padding: 25px 0;
+    }
+    .why .question h2 {
+      color: #fff;
+      font-size: 25px;
+      font-weight: 600;
+    }
+    .why .question::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50px;
+      height: 50px;
+      border-top: 4px solid #fff;
+      border-left: 4px solid #fff;
+    }
+    .why .question::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 50px;
+      height: 50px;
+      border-bottom: 4px solid #fff;
+      border-right: 4px solid #fff;
+    }
+
+  /* answer section */
+  .answer {
+    position: relative;
+    text-align: center;
+    padding: 40px 0;
+    }
+    .triangle {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 47%;
+    border-top: 25px solid var(--orange);
+    border-right: 25px solid transparent;
+    border-left: 25px solid transparent;
+    }
+    .answer .inner h2 {
+      font-size: 30px;
+      font-weight: 600;
+    }
+    .answer .inner p {
+      font-size: 18px;
+    }
+    .answer .inner .txt-bottom {
+      padding-top: 40px;
+      font-size: 14px;
+      padding-top: 18px;
+    }
+    .answer .container .row {
+      justify-content: center;
+    }
+    .answer .client.voice {
+      padding: 20px 0;
+      font-size: 18px;
+      text-align: left;
+      font-style: italic;
+      color: #777;
+    }
+    .answer img {
+      border: solid;
+      border-color: #ebb94d;
+      display: block;
+      max-width: 100%;
+      height: auto;
+      width: auto;
+    }
+    .answer .client.voice p {
+      margin-top: 15px;
+    }
+    .answer .client.voice small {
+      display: inline-block;
+      margin-top: 8px;
+      text-decoration: underline;
+    }
+
+  /* class section */
+  .class {
+    background-image: url(img/classbg.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 60px 0;
+    text-align: center;
+    color: #fff;
+    }
+    .class .title h2 {
+      font-size: 20px;
+      font-weight: 600;
+    }
+    .class .title p {
+      font-size: 18px;
+    }
+    .class .container {
+      padding: 40px 0;
+      margin: 0 auto;
+      max-width: 780px;
+    }
+    .class .classwrap {
+      background-color: #fff;
+      border: 2px solid #016ea9;
+      padding: 0;
+      border-radius: 5px;
+    }
+    .class .classbox .bfstudy {
+      background-color: var(--blue);
+    }
+    .class .classbox h2{
+      padding: 15px;
+      font-size: 25px;
+      font-weight: 600;
+    }
+    .class .classbox ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+    .class .classbox li {
+      padding: 10px;
+      border-bottom: 1px dotted #e5e5e5;
+      color: #000;
+      font-size: 16px ;
+    }
+    .class .classbox .instudy {
+      background-color: var(--blue);
+    }
+
+  /* classnottom section */
+  .classbottom .bottom {
+      height: 145px;
+      text-align: center;
+      padding: 40px 0;
+      background-color: var(--blue);
+    }
+    .classbottom .bottom  {
+      color: #fff;
+      font-size: 20px;
+      font-weight: 600;
+      margin: 0;
+    }
+
+  /* flow section */
+  /* flowdetailpc */
+  .flow {
+    padding: 40px 0;
+    text-align: center;
+    }
+    .flow .txt {
+      font-size: 30px;
+      font-weight: 600;
+    }
+    .flow .flowimg {
+      width: 1170px;
+      margin: 40px auto;
+    }
+    .flow .flowbox {
+      background-color: var(--bgcolor);
+      border-radius: 5px;
+      width: 1170px;
+      max-width: calc(100% - 40px);
+      padding: 10px 35px;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+    .flow .flowbox p {
+      margin: 20px 0;
+    }
+    .flow .flowleft {
+      float: left;
+      padding: 20px;
+      width: 200px;
+    }
+    .flow .flowleft img {
+      width: auto;
+      height: auto;
+      max-width: 100%;
+      max-height: 100%;
+    }
+    .flow .flowleft p {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 0;
+    }
+    .flow .sectionbox {
+      text-align: left;
+      padding: 10px 0 0;
+    }
+    .flow .sectionbox p {
+      font-size: 16px;
+      font-weight: 600;
+      margin: 20px 0;
+    }
+    .flow .sectionbox .txtnormal {
+      font-weight: normal;
+    }
+    .flowbox:nth-child(3) > .flowleft {
+      margin-top: 40px;
+    }      
+
+  /* bangkok section */
+  .bangkok {
+    background-image: url(img/bangkokbg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 80px 80px;
+    }
+    .bangkok .sectionbox {
+      color: #fff;
+      width: 1170px;
+      max-width: calc(100% - 40px);
+      margin: 0 auto;
+    }
+    .bangkok .sectionbox h2 {
+      font-size: 30px;
+      font-weight: 600;
+    }
+    .bangkok .sectionbox p {
+      font-size: 14px;
+      padding-top: 20px;
+    }
+    .bangkok .sectionbox ul {
+      padding: 0 20px;
+    }
+    .bangkok .sectionbox li {
+      padding: 8px 0;
+      font-size: 16px;
+      font-weight: 600;
+    }
+    .bangkok .sectionbox .bottom {
+      font-size: 20px;
+      font-weight: 600;
+      padding-top: 0;
+    }
+
+  /* special section */
+  .special {
+    background-color: var(--yellow);
+    color: #000;
+    text-align: center;
+    padding: 60px 0;
+    }
+    .special .title h2 {
+      font-size: 30px;
+      font-weight: 600;
+    }
+    .special .title p {
+      font-size: 18px;
+      padding: 40px 0;
+    }
+    .special .txtwhite {
+      color: #fff;
+    }
+    .special .specialpeople {
+      position: relative;
+      bottom: -58px;
+      width: 45%;
+      display: inline-block;
+      background-color: var(--yellow);
+      margin: 0 auto;
+    }
+    .special .specialpeople h2 {
+      font-size: 30px;
+      font-weight: 600;
+    }
+    .special .container {
+      width: 1170px;
+      max-width: calc(100% - 40px);
+      margin-top: 40px;
+      border: 2px solid #fff;
+      padding: 40px;
+    }
+    .special .specialbox {
+      border-radius: 50%;
+      background-color: #fff;
+      padding: 0;
+      margin: 10px;
+      width: 250px;
+      height: 250px;
+      display: inline-block;
+    }
+    .special .bonusbox {
+      padding: 15px;
+      height: 250px;
+      width: 250px;
+      display: table-cell;
+      vertical-align: middle;
+    }
+    .special .specialbox .bonus {
+      color: var(--yellow);
+      
+    }
+    .special .specialbox .bonus h2 {
+      font-size: 25px;
+      font-weight: 300;
+    }
+    .special .specialbox .seciton p {
+      font-size: 16px;
+    }
+    .specialsp {
+      display: none;
+    }
+
+  /* specialdetail section */
+  .specialdetail {
+    background-image: url(img/specialdetail.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 40px 0;
+    }
+    .specialdetail .section {
+      text-align: center;
+      color: #fff;
+    }
+    .specialdetail .section h2 {
+      font-size: 20px;
+      font-weight: 600;
+    }
+    .specialdetail .section p {
+      font-size: 18px;
+      font-weight: 600;
+      padding: 20px 0;
+    }
+    .specialdetail .middle {
+      width: 860px;
+      margin: 0 auto;
+      position: relative;
+      padding: 20px 0;
+    }
+    .specialdetail .middle::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50px;
+      height: 50px;
+      border-top: 5px solid #fff;
+      border-left: 5px solid #fff;
+    }
+    .specialdetail .middle::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 50px;
+      height: 50px;
+      border-bottom: 5px solid #fff;
+      border-right: 5px solid #fff;
+    }
+    .specialdetail .section .middle h2 {
+      font-size: 30px;
+      font-weight: 600;
+    }
+
+  /* learning section */
+  .learning {
+    background-color: #fff;
+    text-align: center;
+    padding: 60px 0;
+    }
+    .learning .title h2 {
+      font-size: 30px;
+      font-weight: 600;
+    }
+    .learning .title p {
+      font-size: 20px;
+      font-weight: 600;
+      padding-top: 40px;
+    }
+    .learning .container {
+      width: 860px;
+      margin: 0 auto;
+      max-width: calc(100% - 40px);
+    }
+    .learning .learningbox img {
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+      max-height: 100%;
+    }
+    .learning .sectionbox {
+      text-align: left;
+      font-size: 14px;
+    }
+
+  /* contactform section */
+
+
+  /* media section */
+  @media only screen and (min-width: 768px) and (max-width: 1190px) {
+    /* header media */
+    .header .inner {
+        width: 100%;
+      }
+      .header-left p{
+        font-size: 13px;
+      }
+      .header-right {
+        display: inline-block;
+        position: relative;
+        top: 0px;
+        right: 40px;
+      }
+      .header-right a {
+        display: block;
+        font-size: 13px;
+      }
+      
+    /* top media */
+    .top .section-top {
+        font-size: 20px;
+      }
+      .top .section-bottom {
+        font-size: 15px;
+      }
+
+    /* info media */
+    .info .section {
+      font-size: 18px;
+     }
+      .info .section-top .strong {
+      margin-top: 0px;
+      }
+      .info .form {
+      margin: 10px 80px;
+      } 
+      .info .form a {
+      white-space: nowrap;
+      font-size: 18px;
+      padding: 25px 50px;
+      }
+      .info .section-bottom p {
+        font-size: 20px;
+      }
+      .info .section-bottom .item01 {
+        margin-top: 0px;
+      }
+      .info .section-bottom {
+        margin-top: 40px;
+      }
+    
+    /* introduction media*/
+    .introduction .title h2 {
+      font-size: 24px;
+      }
+      .introduction .section p {
+        font-size: 16px;
+      }
+    
+    /* about media */
+    .about .title {
+      font-size: 24px;
+      }
+      .about .section p {
+        font-size: 16px;
+      }
+      .about .subtitle h3 {
+        font-size: 16px;
+      }
+
+      /* aboutsecound media */
+    .aboutsecond {
+      padding: 40px 0;
+      }
+      .aboutsecound .txt1 {
+        line-height: 3rem;
+        font-size: 24px;
+        font-weight: 600;
+      }
+      .aboutsecound .txtm {
+        font-size: 16px;
+      }
+      .aboutsecound .container {
+        padding: 0 20%;
+        margin-top: 30px;
+      }
+      .container {
+        width: auto;
+      }
+      .aboutsecond .sidebox {
+        width: 60%;
+        margin: 0 20% 20px !important;
+      }
+      .aboutsecond .txts {
+        font-size: 14px;
+        letter-spacing: 0;
+      }
+      .txtxs {
+        font-size: 12px;
+        letter-spacing: 0;
+      }
+
+    /* aboutthird media */
+    .aboutthird .section p {
+        font-size: 16px;
+      }   
+    
+    /* isaralearning media */
+    .isaralearning {
+      padding: 40px 0;
+      }
+      .isaralearning .title h2 {
+        font-size: 24px;
+        font-weight: 600;
+      }
+      .isaralearning .learningbox {
+        padding: 20px;
+      }
+      .isaralearning .section p {
+        font-size: 16px;
+      }
+      .isaralearning .bottom p {
+        font-size: 14px;
+      }
+
+    /* merit media */
+    .merit {
+      padding: 30px 0;
+      }
+      .merit .title-bottom {
+        padding-bottom: 25px;
+      }
+      .merit .container h2 {
+        text-align: center;
+        font-size: 18px;
+      }
+      .merit .container .learnfromfreelancer {
+        width: 300px;
+        margin: 0 auto;
+      }
+      .merit .container .learnfromprojects {
+        width: 300px;
+        margin: 0 auto;
+      }
+      .merit .container .actuallyfree {
+        width: 300px;
+        margin: 0 auto;
+      }
+      .merit .contents .title h3 {
+        font-size: 25px;
+        font-weight: 600;
+      }
+      .merit .contents .section-top {
+        font-size: 18px;
+      }
+      .merit .contents .section p {
+        font-size: 16px;
+      }
+      .merit .bottom {
+        padding-top: 40px;
+        font-size: 13px;
+      }
+
+    /* teacher media */
+      .teacher .icon i {
+        font-size: 24px;
+      }
+      .teacher .icon h3 {
+        font-size: 24px;
+        top: 0;
+      }
+      .teacher .container {
+        width: auto;
+      }
+      .teacher .sectionbox {
+        font-size: 14px;
+      }
+    
+    /* why media */
+    .why .title p {
+      font-size: 18px;
+      }
+      .why .question h2 {
+        font-size: 20px;
+      }
+      .why .question .txt2 {
+        padding-top: 10px;
+      }
+
+    /* answer media */
+    .answer .justify-content-center {
+      justify-content: left;
+      }
+      .answer .inner h2 {
+        font-size: 25px;
+      }
+      .answer .inner p {
+        font-size: 16px;
+      }
+      .answer .inner .txt-bottom {
+        font-size: 12px;
+        padding-top: 18px;
+      }
+      .answer .container {
+        width: auto;
+      }
+      .answer .container .row {
+        justify-content: left;
+      }
+      .answer .client.voice {
+        font-size: 16px;
+      }
+      .answer img {
+        text-align: left;
+      }
+
+    /* class media */
+    .class .title h2 {
+      font-size: 24px;
+      }
+      .class .title p {
+        font-size: 14px;
+      }
+      .class .container {
+        padding: 30px 10%;
+        width: auto;
+      }
+      .class .classbox {
+        margin-top: 15px;
+      }
+      .class .classbox h2{
+        font-size: 16px;
+      }
+      .class .classbox li {
+        font-size: 14px ;
+      }
+
+    /* classbottom media */
+    .classbottom .bottom {
+      font-size: 16px;
+      }
+
+    /* flow media */
+    /* flowdeetailpc */
+    .flow .txt {
+        font-size: 24px;
+      }
+      .flow img {
+        max-width: calc(100% - 40px);
+      }
+      .flow .flowbox p {
+        margin: 20px 0;
+      }
+      .flow .sectionbox p {
+        font-size: 14px;
+      }
+    
+    /* bangkok media */
+    .bangkok {
+      padding: 60px 60px;
+      }
+      .bangkok .sectionbox h2 {
+        font-size: 28px;
+      }
+      .bangkok .sectionbox p {
+        font-size: 12 px;
+        padding-top: 20px;
+      }
+      .bangkok .sectionbox ul {
+        padding: 0 20px;
+      }
+      .bangkok .sectionbox li {
+        padding: 8px 0;
+        font-size: 16px;
+      }
+      .bangkok .sectionbox .bottom {
+        font-size: 18px;
+        padding-top: 0;
+      }
+
+    /* special media */
+    .special .title h2 {
+        font-size: 24px;
+      }
+      .special .title p {
+        font-size: 14px;
+      }
+      .special .specialpeople {
+        bottom: -76px;
+        width: 400px;
+      }
+      .special .specialpeople h2 {
+        font-size: 24px;
+      }
+      .special .container {
+        width: auto;
+      }
+      .special .specialbox .bonus h2 {
+        font-size: 24px;
+      }
+      .special .specialbox .seciton p {
+        font-size: 14px;
+      }
+
+    /* specialdetail media */
+    .specialdetail .section h2 {
+        font-size: 18px;
+      }
+      .specialdetail .section p {
+        font-size: 16px;
+      }
+      .specialdetail .section .middle h2 {
+        font-size: 25px;
+      }
+
+    /* learning media */
+    .learning .title p {
+        font-size: 16px;
+      }
+      .learning .container {
+        padding: 20px;
+        width: 1170px;
+      }
+      .learning .learningbox img {
+        margin: 40px 10px; 
+      }
+      .learning .sectionbox ul {
+        padding: 30px;
+      }
+
+    /* contactform media */
+    .contactform {
+
+      }
+      .contactform .title {
+        
+      }
+      .contactform .title h2 {
+
+      }
+      form#OF_form1 input, form#OF_form1 textarea {
+        width: 100%;
+        height: 55px;
+        border-radius: 5px;
+        padding: 10px;
+        margin-bottom: 25px;
+        border: none;
+      }
+      form#OF_form1 textarea {
+        height: 100px;
+      }
+  }
+
+
+  @media (max-width:768px) {
+    /* first media */
+    .brsp {
+      display: inline;
+    }
+    .psp {
+      display: block;
+    }
+    /* header media */
+    .header {
+      height: 65px;
+     }
+      .header .inner {
+        width: auto;
+        padding-top: 0px;
+      }
+      .header-left p{
+        padding-top: 10px;
+        font-size: 10px;
+        left: 12px;
+      }
+      .header-left img{
+        position: absolute;
+        top: 30px;
+        left: 12px;
+        width: 85px;
+        height: 25px;
+      }
+      .header-right {
+        display: none;
+      }
+      .header-right02 {
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        padding-top: 10px;
+        background-color: var(--form);
+        width: 75px;
+        height: 65px;
+      }
+      .header-right02 .form {
+        text-align: center;
+      }
+      .header-right02 p {
+        text-align: center;
+      }
+      .header-right02 a {
+        text-decoration: none;
+        font-size: 12px;
+        color: #fff;
+      }
+      
+    /* top media */
+    .top {
+      background-image: url(img/mainsp.jpg);
+      background-position: center;
+      background-size: cover;
+      width: 100%;
+      height: 500px;
+      z-index: 1; 
+      }
+
+    /* info media */
+    .info {
+      padding-top: 20px;
+      }
+      .info .section {
+        font-size: 15px;
+      }
+      .info .form {
+        margin: 10px 20xp;
+        margin-top: 25px;
+        margin-bottom: 10px;
+      }
+      .info .form a {
+        padding: 15px 20px;
+      }
+      .info .section-bottom p {
+        font-size: 15px;
+      }
+      .info .section-bottom .item01 {
+        margin-top: 0px;
+      }
+      .info .section-bottom {
+        margin-top: 35px;
+      }
+
+    /* introduction media */
+    .introduction {
+      padding: 30px 0;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      height: inherit;
+      }
+      .introduction .title h2 {
+        font-size: 18px;
+      }
+      .introduction .title h2::before {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 30px;
+      }
+      .introduction .title h2::after {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 30px;
+      }
+      .introduction .section {
+        padding: 30px 0;
+      }
+
+    /* about media */
+    .about .circle1 {
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+      font-size: 12px;
+      }
+      .about .title  h2{
+        font-size: 18px;
+      }
+      .about .section p {
+        font-size: 15px;
+      }
+      .about .contents {
+        height: 170px;
+      }
+      .about .subtitle h3{
+        font-size: 15px;
+        padding-top: 10px;
+      }
+      .about .aboutbox {
+        padding: 10px;
+      }
+      .about .box {
+        padding: 5px;
+      }
+      .about .box img {
+        height: 30px;
+      }
+      .about .texts {
+        font-size: 10px;
+      }
+
+    /* aboutsecond media */
+    .aboutsecond {
+      background-image: url(img/aboutsecondbgsp.jpg);
+      padding: 30px 30px;
+      }
+      .aboutsecond .txt1 {
+        line-height: 2rem;
+      }
+      .aboutsecond .txtm {
+        font-size: 13px;
+        letter-spacing: 0;
+      }
+      .aboutsecond  .sidebox {
+        width: 100%;
+        margin: 0 auto 15px !important;
+        padding: 15px 50px;
+      }
+      .sidecontents .txtxs {
+        margin: 15px 0 5px;
+      }
+      .aboutsecond .sidecontents p {
+        margin: 0;
+      }
+
+      .aboutsecound .section-bottom p {
+        font-size: 16px;
+      }
+    /* aboutthird media */
+    .aboutthird {
+      padding: 20px 0;
+      }
+      .aboutthird .section p {
+        font-size: 12px;
+      }
+
+    /* isaralearning media */
+    .isaralearning {
+      padding: 20px 0;
+      }
+      .isaralearning .title h2 {
+        font-size: 18px;
+        font-weight: 600;
+      }
+      .isaralearning .section p {
+        font-size: 15px;
+      }
+      .isaralearning .container {
+        padding: 0 50px;
+        margin-top: 0;
+        margin-bottom: 015px;
+      }
+      .isaralearning .learningbox {
+        padding: 5px;
+      }
+      .isaralearning .learningbox img {
+        width: 120px;
+      }
+      .isaralearning .bottom p {
+        font-size: 12px;
+      }
+
+    /* merit media */
+    .merit {
+      padding: 25px 0;
+      }
+      .merit .title-top {
+        font-size: 18px;
+      }
+      .merit .title-bottom {
+        font-size: 20px;
+      }
+      .merit .container h2 {
+        font-size: 18px;
+      }
+      .merit .contents .title h3 {
+        font-size: 20px;
+      }
+      .merit .contents .section-top {
+        font-size: 18px;
+      }
+      .merit .contents .section p {
+        font-size: 16px;
+      }
+      .merit .bottom {
+        padding-top: 40px;
+        font-size: 12px;
+      }
+    
+    /* teacher media */
+    .teacher {
+      padding: 20px 0;
+      background-image: url(img/teacherbgsp.jpg);
+      }
+      .teacher .icon i {
+        font-size: 20px;
+      }
+      .teacher .icon h3 {
+        font-size: 18px;
+        top: 0;
+      }
+      .teacher .section-top {
+        font-size: 12px;
+      }
+      .teacher .container {
+        padding: 0 10px;
+      }
+      .teacher .teacherbox img {
+        width: 120px;
+      }
+      .teacher .sectionbox {
+        padding: 40px 10px 10px 10px;
+        height: auto;
+        font-size: 12px;
+      }
+      .teacher .teacherbox .section {
+        text-align: left;
+      }
+
+    /* why media */
+    .why .title {
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+      }
+      .why .title p {
+      font-size: 10px;
+      }
+      .why .question h2 {
+        font-size: 15px;
+      }
+      .why .question::before {
+        width: 30px;
+        height: 30px;
+      }
+      .why .question::after {
+        width: 30px;
+        height: 30px;
+      }
+      .why .question .txt2 {
+        padding-top: 20px;
+      }
+
+    /* answer media */
+    .justify-content-center {
+      justify-content: left;
+      }
+      .answer .inner p {
+        font-size: 14px;
+      }
+      .answer .inner .txt-bottom {
+        font-size: 12px;
+        padding-top: 18px;
+      }
+      .answer .container .row {
+        justify-content: left;
+      }
+      .answer .client.voice {
+        margin-top: 0;
+      }
+
+    /* class media */
+    .class {
+      background-image: url(img/classbgsp.jpg);
+      padding: 20px 0;
+      }
+      .class .title h2 {
+        font-size: 18px;
+      }
+      .class .title p {
+        font-size: 12px;
+      }
+      .class .container {
+        padding: 20px 10px;
+      }
+      .class .classbox h2{
+        font-size: 15px;
+      }
+      .class .classbox li {
+        font-size: 12px ;
+      }
+      .classbox:last-child {
+        margin-top: 15px;
+      }
+
+    /* classbottom media */
+    .classbottom {
+      padding: 20px 0;
+      }
+      .classbottom .bottom {
+        font-size: 15px;
+      }
+
+    /* flow media */
+    /* flowdetailpc */
+    .flow {
+      padding: 20px 0;
+      display: none;
+      }
+      .flow .txt {
+        font-size: 18px;
+      }
+      .flow .flowimg {
+        display: none;
+      }
+      .flow .flowdetailpc {
+        display: none;
+      }
+
+    /* bangkok media */
+    .bangkok {
+      background-image: url(img/bangkokbgsp.jpg);
+      background-position: center;
+      background-size: cover;
+      padding: 40px 0;
+      }
+      .bangkok .sectionbox h2 {
+        font-size: 28px;
+        text-align: center;
+      }
+      .bangkok .sectionbox p {
+        font-size: 12px;
+        padding-top: 20px;
+      }
+      .bangkok .sectionbox ul {
+        padding: 0 20px;
+      }
+      .bangkok .sectionbox li {
+        padding: 8px 0;
+        font-size: 12px;
+      }
+      .bangkok .sectionbox .bottom {
+        font-size: 18px;
+        padding-top: 0;
+      }
+
+    /* special media */
+    .special {
+      background-position: center calc(100% + 9px);
+      background-size: 175px auto;
+      padding: 20px 0;
+      }
+      .special .title h2 {
+        font-size: 18px;
+        margin-top: 0;
+      }
+      .special .title p {
+        font-size: 12px;
+      }
+      .special .specialpeople {
+        bottom: -60px;
+        width: 250px;
+      }
+      .special .specialpeople h2 {
+        font-size: 18px;
+      }
+      .special .container {
+        margin-top: 0 15px;
+        padding: 30px;
+        color: #fff;
+      }
+      .specialpc {
+        display: none;
+      }
+      .specialsp {
+        display: block;
+      }
+      .specialspbox {
+        margin: 15px 0;
+        overflow: hidden;
+      }
+      .specialleft {
+        width: 30%;
+        float: left;
+        padding: 0;
+      }
+      .circle2 {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        font-size: 12px;
+        color: #ebb94d;
+        background-color: #fff;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        display: inline-block;
+        border-radius: 50%;
+      }
+      .specialright {
+        padding: 12px 0;
+        overflow: hidden;
+        text-align: left;
+      }
+      .special .txt1 {
+        font-weight: 600
+      }
+      .special .txts {
+        font-size: 12px;
+        font-weight: 600;
+      }
+
+    /* specialdetail media */
+    .specialdetail .section h2 {
+      font-size: 18px;
+    }
+    .specialdetail .section p {
+      font-size: 16px;
+    }
+    .specialdetail .section .middle h2 {
+      font-size: 25px;
+    }
+
+  /* learning media */
+  .learning .title h2 {
+      font-size: 20px;
+    }
+    .learning .title p {
+      font-size: 14px;
+    }
+    .learning .sectionbox {
+      padding-top: 10px;
+    }
+    .learning .learningbox img {
+      margin: 0;
+    }
+    .learning .sectionbox ul {
+      padding: 30px 20px;
+    }
+
+  /* contactform media */
+  }
